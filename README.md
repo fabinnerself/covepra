@@ -40,17 +40,23 @@ El proyecto también ha sido probado en el siguiente entorno alternativo:
 - **vuejs package.json**: ^3.2.13
 
 ## notas de instalacion
-1. Crear la App Vue 
+1. Crear la App Vue
+   
 	vue create my-vue-app
+
 	cd my-vue-app
+
     npm install (opcional)
-	npm run serve    
-2.  Instalar  EasyUI para Vuejs 3.
+   
+	npm run serve
+  
+3.  Instalar  EasyUI para Vuejs 3.
+   
     npm install v3-easyui --save
     
 	npm install axios
 
-4. Importar  EasyUI en /src/main.js
+5. Importar  EasyUI en /src/main.js
 import { createApp } from 'vue';
 import App from './App.vue';
 import 'v3-easyui/dist/themes/default/easyui.css';
@@ -58,7 +64,7 @@ import 'v3-easyui/dist/themes/icon.css';
 import 'v3-easyui/dist/themes/vue.css';
 import EasyUI from 'v3-easyui';
 
-5. Importar los components a '/src/App.vue'.
+6. Importar los components a '/src/App.vue'.
 <template>
     <div>
         <DataGrid :data="data" style="height:250px">
